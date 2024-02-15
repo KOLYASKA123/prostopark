@@ -1,0 +1,154 @@
+{% load static %}
+{% load pwa %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% progressive_web_app_meta %}
+    <link rel="stylesheet" href="{% static 'myapp/bootstrap/css/style.css' %}">
+    <title>Prosto-parkovka</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="container-fluid first-section">
+    <nav class="navbar navbar-expand-lg navbar1">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="{% static 'myapp/images/logo.svg' %}" alt="Prosto-parkovka" width="230">
+            </a>
+          <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="navbar-collapse collapse navcontainer" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item ">
+                <h4 class="menu_item"><a class="nav-link active text-light" aria-current="page" href="#downloading">Скачать</a></h4>
+              </li>
+              <li class="nav-item ">
+                <h4 class="menu_item"><a class="nav-link active text-light" href="#project">О проекте</a></h4>
+              </li>
+              <li class="nav-item ">
+                <h4 class="menu_item"><a class="nav-link active text-light" href="#contact">Контакты</a></h4>
+              </li>
+              <li class="nav-item ">
+                <h4 class="menu_item"><a class="nav-link active text-light" aria-current="page" href={% url 'login' %}>Войти</a></h4>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row justify-content-center">
+                <div class="col-xl-6 col-md-12 d-flex align-items-end">
+                    <div class="annotate__text">
+                        <h1 class="nadoelo">Надоело искать место где оставить свое авто?</h1>
+                        <h2 class="use">Воспользуйся приложением для поиска парковочного места</h2>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-md-12 image_park">
+                  <img class="annotate__img img-fluid" src="{% static 'myapp/images/image 1.svg' %}" alt="" >
+                </div>
+        </div>
+    </div>
+    </div>
+    <div class="container second-section">
+        <div class="row justify-content-center title_project">
+            <h1 id = "downloading" class="col-8-xxl col-12 download_title">
+                 Установи приложение на свой тип устройства
+            </h1>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-xl-4 col-md-12 card_item">
+                <a href="{% static 'myapp/downloads/android_test_download.txt' %}" download="">
+                    <img class="img-fluid btn" src="{% static 'myapp/images/android.svg' %}" alt="">
+                </a>
+            </div>
+            <div class="col-xl-4 col-md-12 card_item">
+                <a href="{% static 'myapp/downloads/IOS_test_download.txt' %}" download="">
+                    <img class="img-fluid btn" src="{% static 'myapp/images/Ios.svg' %}" alt="">
+                </a>
+            </div>
+            <div class="col-xl-4 col-md-12 card_item">
+                <a href={% url 'login' %}>
+                    <img class="img-fluid btn" src="{% static 'myapp/images/WIN.svg' %}" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid therd-section " >
+        <div class="container" id="neronet">
+            <div class="row justify-content-center">
+                <div class="col-12 title_about text-light">
+                    <h1 id="project"> О проекте</h1>
+                </div>
+            </div>
+            <div class="row justify-content-center row1">
+                <div class="col-xxl-3 col-md-5 col-sm-6 FSI">
+                    <img class="img-fluid" src="{% static 'myapp/images/logo.svg' %}" alt="Prosto-parkovka" >
+                </div>
+                <div class="col-xxl-4 col-md-5 col-sm-6 section_text text-light">
+                    <h4>
+                        Это веб-приложение предназначенное для поиска парковочных мест при помощи искусственного интеллекта
+                    </h4>
+                </div>
+            </div>
+            <div class="row justify-content-center row2">
+                <img class="img-fluid" src="{% static 'myapp/images/string1.svg' %}" alt="Prosto-parkovka" >
+            </div>
+            <div class="row justify-content-center row3">
+                <div class="col-xxl-4 col-md-5 col-sm-6 section_text text-light vnedrenie">
+                    <h4>
+                         Внедрение систем интеллектуального видеонаблюдения позволяет оптимизировать работу коммунальных служб
+                    </h4>
+                </div>
+                <div class="col-xxl-3 col-md-5 col-sm-6">
+                    <img class="img-fluid" src="{% static 'myapp/images/cam.svg' %}" alt="Prosto-parkovka" >
+                </div>
+            </div>
+            <div class="row justify-content-center row4">
+                <img class="img-fluid" src="{% static 'myapp/images/string2.svg' %}" alt="Prosto-parkovka" >
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-xxl-3 col-md-5 col-sm-6 FSI">
+                    <img class="img-fluid" src="{% static 'myapp/images/FSI.svg' %}" alt="Prosto-parkovka" >
+                </div>
+                <div class="col-xxl-4 col-md-5 col-sm-6 section_text text-light" >
+                    <h4>
+                        Данный проект создан при поддержке “Фонда содействия инновациям”
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid foth-section">
+        <div id="contact" class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-4 col-sm-12 contact">
+                        <h4>
+                            Контакты:
+                        </h4>
+                        <h5>
+                            Тел: +7(911)376-67-17
+                        </h5>
+                        <h5>
+                            E-mail: dkira2310@gmail.com
+                        </h5>
+                        <h5>
+                            Адрес: г. Псков, Ольгинская наб., 5А
+                        </h5>
+                </div>
+                <div class="col-xxl-4 col-md-6 col-sm-7 footer_logo">
+                    <div class="footer__container_right">
+                        <a href="#"><img class="footer_right img-fluid" src="{% static 'myapp/images/npstud.svg' %}" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+

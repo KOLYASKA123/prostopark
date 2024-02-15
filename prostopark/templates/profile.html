@@ -1,0 +1,44 @@
+{% extends 'navbar.html' %}
+{% block content %}
+<div class="container-fluid forms">
+    <div class="row justify-content-center title_project">
+        <h1 id="downloading" class="col-8-xxl col-12 download_title text-light">
+            Данные вашей учетной записи
+        </h1>
+    </div>
+    <form method="post" style="margin-bottom: 50px;" action={% url 'profile' %}>
+        {% csrf_token %}
+        <div class="row justify-content-center">
+            <div class="col-4">
+                <div class="row mb-3">
+                    <label for="inputUsername1" class="col-sm-4 col-form-label text-light">Имя пользователя</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" id="inputUsername1" name="username" value="{{request.user.username}}">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label for="inputEmail1" class="col-sm-4 col-form-label text-light">Email</label>
+                    <div class="col-sm-6">
+                        <input type="email" class="form-control" id="inputEmail1" name="email" value="{{request.user.email}}">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label for="inputCar1" class="col-sm-4 col-form-label text-light">Автомобиль</label>
+                    <div class="col-sm-6">
+                        <select id="inputCar1" size="1" name="car">
+                            <option value="{{request.user.car.pk}}" selected>{{request.user.car}}</option>
+                            {% for car in cars %}
+                            <option value="{{car.pk}}">{{car}}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary" id="submitBtn " style="margin-top: 3vw;">Сохранить изменения</button>
+                {% if email_change_error_message %}
+                    <p class="text-danger">{{ email_change_error_message }}</p>
+                {% endif %}
+            </div>
+        </div>
+    </form>
+</div>
+{% endblock content %}

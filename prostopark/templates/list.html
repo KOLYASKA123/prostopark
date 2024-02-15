@@ -1,0 +1,42 @@
+{% extends "navbar.html" %}
+{% block content %}
+<div class="container " style="margin-bottom: 85vw;">
+    <div class="row justify-content-center title_project">
+        <h1 id = "downloading" class="col-8-xxl col-12 download_title use">
+             Выберете адрес среди доступных
+        </h1>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-lg-6 col-md-12 col-sm-12 street">
+            <a href={% url 'rokosi' %} class="btn btn-primary col-md-12 col-lg-6 col-10" type="button">ул. Рокоссовского</a>
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12 street">
+            <a href={% url 'baikova' %} class="btn btn-primary col-md-12 col-lg-6 col-10" type="button">ул. Байкова</a>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-lg-6 col-md-12 col-sm-12 street">
+            <a href={% url 'zapadnaya' %} class="btn btn-primary col-md-12 col-lg-6 col-10" type="button">ул. Западная</a>
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12 street">
+            <a href={% url 'ooops' %} class="btn btn-primary col-md-12 col-lg-6 col-10" type="button">ул. Михайловская</a>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-lg-6 col-md-12 col-sm-12 street">
+            <a href={% url 'ooops' %} class="btn btn-primary col-md-12 col-lg-6 col-10" type="button">ул. Балтийская</a>
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12 street">
+            <a href={% url 'ooops' %} class="btn btn-primary col-md-12 col-lg-6 col-10" type="button">ул. Печорская</a>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-lg-6 col-md-12 col-sm-10 street">
+            <a href={% url 'ooops' %} class="btn btn-primary col-md-12 col-lg-6 col-10" type="button">ул. Льва Толстого</a>
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-10 street">
+            <a href={% url 'ooops' %} class="btn btn-primary col-md-12 col-lg-6 col-10" type="button">ул. Советская</a>
+        </div>
+    </div>
+</div>
+{% endblock content %}

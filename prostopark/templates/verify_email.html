@@ -1,0 +1,14 @@
+{% load i18n %}{% autoescape off %}
+{% blocktranslate %}Вы получили это письмо, поскольку запросили подтверждение почты для вашего аккаунта на сайте {{ site_name }}.{% endblocktranslate %}
+{% translate "Если вы этого не делали, то смените пароль от вашего аккаунта. Если у вас нет аккаунта на нашем сайте, то просто проигнорируйте данное письмо." %}
+{% translate "Перейдите по этой ссылке для верификации аккаунта:" %}
+{% block reset_link %}
+{{ protocol }}://{{ domain }}{% url 'verify_email' uidb64=uid token=token %}
+{% endblock %}
+{% translate 'Ваше имя пользователя:' %} {{ user.username }}
+
+{% translate "Спасибо, что используете наш сайт!" %}
+
+{% blocktranslate %}Команда {{ site_name }}{% endblocktranslate %}
+
+{% endautoescape %}

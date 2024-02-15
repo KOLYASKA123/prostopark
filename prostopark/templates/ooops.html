@@ -1,0 +1,16 @@
+{% extends 'navbar.html' %}
+{% block content %}
+        <div class="container ">
+            <div class="row justify-content-center " style="margin-bottom: 26.5vw;">
+                <div class="row justify-content-center title_project">
+                    <h1 id="downloading" class="col-8-xxl col-12 download_title text-light">
+                        Упсссссс........ похоже, что данная камера пока недоступна. Мы уже работаем над ее установкой.
+                    </h1>
+                    <div class="col-lg-4 col-sm-8 justify-content-center align-self-center text-center">
+                        <a href={% url 'list' %} class="btn btn-primary trying">Вернуться к списку доступных камер</a>
+                   
+                    </div>
+                </div>
+            </div>
+        </div>
+{% endblock content %}

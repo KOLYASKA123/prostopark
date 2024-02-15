@@ -1,0 +1,180 @@
+@font-face {
+	font-family: 'Montserrat'; 
+	src: url(../fonts/Montserrat-Regular.ttf); 
+}
+
+.navbar1{
+    margin-bottom: 4vw;
+}
+h1,h2,h3,h4,h5{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+
+h1{
+    font-size: 3.5vw;
+}
+
+h2{
+    font-size: 3vw;
+}
+
+h3{
+    font-size: 2.5vw;
+}
+
+h4{
+    font-size: 2vw;
+}
+
+h5{
+    font-size: 0.5vw;
+}
+.menu_item{
+    font-family: 'Montserrat';
+    font-style: normal;
+    margin-right: 2vw;
+    font-weight: bold;
+}
+.navcontainer{
+    justify-content: flex-end;
+}
+.first-section{
+    background: linear-gradient(296.82deg, rgba(63, 231, 110, 0.61) 8.85%, rgba(21, 51, 206, 0.78) 72.92%, rgba(16, 43, 187, 0.78) 97.4%);
+    margin-bottom: 3vw;
+    padding-bottom: 5vw;
+}
+.nadoelo{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    text-align: right;
+    color: #FFFFFF;
+    margin-bottom: 2vw;
+}
+.use {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    color: #FFFFFF;
+    margin-bottom: 3vw;
+}
+
+.image_park{
+    display: flex;
+    justify-content: center;
+}
+
+.second-section{
+    margin-bottom: 3vw;
+}
+.download_title, .title_about{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.card_item{
+    display: flex;
+    justify-content: center;
+}
+/* #neron {
+    background-image:
+    linear-gradient(150deg, rgba(63, 231, 110, 0.61) 8.85%, rgba(21, 51, 206, 0.78) 72.92%, rgba(16, 43, 187, 0.78) 97.4%),
+    url('../img/neronet.png');
+} */
+
+.therd-section{
+    background-image: linear-gradient( 150deg, rgba(63, 231, 110, 0.61) 8.85%, rgba(21, 51, 206, 0.78) 72.92%, rgba(16, 43, 187, 0.78) 97.4%);
+    padding-top: 2vw;
+    padding-bottom: 5vw;
+}
+.row1{
+    margin-bottom: 2vw;
+}
+.row2{
+    margin-bottom: 2vw;
+}
+.row4{
+    margin-bottom: 2vw;    
+}
+
+.vnedrenie{
+    text-align: right;
+}
+
+.section_text{
+    display: flex;
+    align-items: center;
+}
+
+.title_about{
+    margin-bottom: 2vw;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+.title_project{
+    margin-bottom: 2vw;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+.foth-section{ 
+    background: radial-gradient(89.74% 142% at 100% 100%, #4258C8 22.4%, rgba(2, 245, 70, 0.61) 38.54%, #4258C8 40.43%, rgba(242, 242, 226, 0.04) 100%);
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+}
+
+
+@media (max-width: 1199px) {
+    .card_item{
+        margin-bottom: 4vw;
+    }
+  }
+ 
+  @media (max-width: 1199px) {
+    .FSI{
+        display: flex;
+        justify-content: center;
+    }
+  }
+
+
+
+
+.forms{
+    margin-bottom: 100px;
+}
+
+.trying{
+    margin-bottom: 15vw;
+}
+.footer_logo{
+    display: flex;
+    align-items: center;
+}
+
+.player{
+    position: relative;
+    padding-bottom: 30%;
+    height: 0;
+    overflow: hidden;
+}
+
+.first-section-list{
+    background: linear-gradient(296.82deg, rgba(63, 231, 110, 0.61) 8.85%, rgba(21, 51, 206, 0.78) 72.92%, rgba(16, 43, 187, 0.78) 97.4%);
+    padding-bottom: 5vw;
+    overflow: hidden;
+}
+
+.street{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2vw; 
+}
